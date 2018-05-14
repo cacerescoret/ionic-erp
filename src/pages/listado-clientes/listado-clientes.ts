@@ -57,5 +57,9 @@ export class ListadoClientesPage {
 
   }
 
+  editarCliente(cliente){
+    this.navCtrl.push('EditarClientePage', {cliente: cliente})
+  }
+
 
 }
