@@ -61,5 +61,15 @@ export class ListadoClientesPage {
     this.navCtrl.push('EditarClientePage', {cliente: cliente})
   }
 
+  eliminarCliente(id){
+    let url = "http://localhost:3000/cliente/" + id;
+    this.http.delete(url)
+           .subscribe((res:any)=>{
+            this.cargarClientes();
+           },(error)=>{
+             console.log(error);
+           })
+  }
+
 
 }

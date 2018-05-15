@@ -23,6 +23,10 @@
               (click)="editarCliente(cliente)">
         <ion-icon name="brush"></ion-icon>
       </button>
+      <button ion-button icon-only color="danger"
+            (click)="eliminarCliente(cliente._id)">
+        <ion-icon name="trash"></ion-icon>
+      </button>
     </ion-card-content>
   </ion-card>
 </ion-content>
